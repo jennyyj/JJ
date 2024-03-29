@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+body {
+    background-color: #707fa4;
+ }
+ 
+ .header {
+    text-align: center; /* Center-align the text */
+    padding: 0 15%; /* Add padding for spacing */
+    background-color: #b1d0d8; /* Set background color */
+    position: absolute;
+    top: 4%;
+}
+
+.header h1 {
+    margin: 20; /* Remove default margin */
+    font-family: 'poppins', sans-serif;
+    font-size: 100%; /* Adjust font size */
+    font-weight: normal;
+    color: #000; /* Set text color */
+}
+
+ #travel-map {
+    position: relative; /* Set the position of the container */
+    width: 80%; /* Adjust width as needed */
+    height: 600px; /* Set the height */
+    margin-bottom: 10px; /* Add margin bottom */
+}
+
+#travel-map iframe {
+    position: absolute; /* Set the position of the iframe */
+    top: 80%; /* Adjust top position */
+    left: 65%; /* Adjust left position */
+    transform: translate(-50%, -50%); /* Center the iframe */
+    border: 0; /* Remove border */
+}

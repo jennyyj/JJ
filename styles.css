@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+
+body {
+   font-family: 'Montserrat';
+   font-weight: 400;
+   background-color: #707fa4;
+   margin: 0; /* Reset default margin */
+   position: relative;
+   overflow-x: hidden; /* Hide horizontal overflow*/
+}
+
+.content {
+   min-height: 150vh;
+   padding: 0px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+   padding-bottom: 0px; /* Ensure space for the partially visible element */
+   font-size: 10%;
+}
+.circle {
+   position: absolute;
+   width: 21%;
+   height: 21%;
+   border-radius: 50%;
+   background-image: url("circle-image.png");
+   background-size: cover;
+   background-position: middle bottom;
+   background-repeat: no-repeat;
+   top: 47%;
+   right: 41.5%;
+}
+.rectangle-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+.rectangle {
+   flex-basis: calc(50% - 20px);
+   margin-bottom: 10px;
+   margin-right: 10px;
+   padding: 10px;
+   height: 20px;
+   width: 50vh;
+   border-radius: 20px;
+   background-color: #aed8e4;
+   cursor: pointer;
+}
+
+.rectangle:hover {
+    background-color: #b1d0d8; /* Change background color on hover */
+}
+
+.rectangle-wide {
+   position: absolute;
+   top: 70%;
+   right: 55%;
+   width: 50vh; /* Set width of wide rectangle */
+}
+
+
+.rectangle-narrow {
+   position: absolute;
+   top: 80%;
+   right: 55%;
+   width: 50vh; /* Set width of narrow rectangle */
+}
+
+
+.rectangle-tall {
+   position: absolute;
+   top: 90%;
+   right: 35%;
+   width: 50vh;
+}
+
+
+.rectangle-live {
+   position: absolute;
+   top: 70%;
+   right: 15%;
+   width: 50vh;
+}
+
+
+.rectangle-fall {
+   position: absolute;
+   top: 80%;
+   right: 15%;
+   width: 50vh;
+}
+
+.rectangle p {
+   margin: 0;
+   text-align: center;
+}
+
+.column {
+   display: flex;
+   flex-direction: column;
+}
+
+.plain-rectangle1 {
+    width: 100%; /* Set the width */
+    height: 30%; /* Set the height */
+    background-color: #aed8e4; /* Set the background color */
+    border-radius: 200px;
+    position: absolute;
+    top: 10%;
+    right: 25%;
+    /* You can add more properties like margin, padding, border-radius, etc. as needed */
+}
+
+.text {
+    position: absolute; /* Set text positioning to absolute */
+    top: 50%; /* Position vertically in the middle */
+    left: 50%; /* Position horizontally in the middle */
+    transform: translate(-50%, -50%); /* Center the text */
+    text-align: center; 
+}
+
+.header {
+    font-size: 300%; /* Larger font size for header */
+    top: 10%; /* Adjust top position of the header */
+    right: 0%; /* Adjust left position of the header */
+}
+
+.small-text {
+    font-size: 120%; /* Smaller font size for smaller text */
+    top: 10%; /* Adjust top position of the smaller text */
+    left: 0%; /* Adjust left position of the smaller text */
+}
+
+.plain-rectangle2 {
+    width: 100%; /* Set the width */
+    height: 1%; /* Set the height */
+    background-color: #b1d0d8; /* Set the background color */
+    border-radius: 100px;
+    position: absolute;
+    top: 7%;
+    right: 40%;
+}
+
+
+.plain-rectangle3 {
+    width: 100%; /* Set the width */
+    height: 1%; /* Set the height */
+    background-color: #b1d0d8; /* Set the background color */
+    border-radius: 100px;
+    position: absolute;
+    top: 42%;
+    right: 36%;
+    /* You can add more properties like margin, padding, border-radius, etc. as needed */
+}
+
+.diagonal-rectangle1 {
+    width: 30%;
+    height: 15%;
+    background-color: #aed8e4;
+    border-radius: 100px;
+    transform: rotate(-45deg); /* Rotate the rectangle by 45 degrees */
+    transform-origin: bottom left;
+    position: absolute; /* Ensure positioning is relative */
+    top: 120%;
+    bottom: 0;
+    left: 0;
+}
+
+.diagonal-rectangle2 {
+    width: 28%;
+    height: 4%;
+    background-color: #b1d0d8;
+    border-radius: 100px;
+    transform: rotate(-45deg); /* Rotate the rectangle by 45 degrees */
+    transform-origin: bottom left;
+    position: absolute; /* Ensure positioning is relative */
+    top: 137.3%;
+    bottom: 0;
+    left: 0;
+}
+
+.diagonal-rectangle3 {
+    width: 5%;
+    height: 1%;
+    background-color: #b1d0d8;
+    border-radius: 100px;
+    transform: rotate(-45deg); /* Rotate the rectangle by 45 degrees */
+    transform-origin: bottom left;
+    position: absolute; /* Ensure positioning is relative */
+    top: 112%;
+    bottom: 0;
+    left: 0;
+}
+
+.diagonal-rectangle4 {
+    width: 30%;
+    height: 15%;
+    background-color: #aed8e4;
+    border-radius: 100px;
+    transform: rotate(-45deg); /* Rotate the rectangle by 45 degrees */
+    transform-origin: bottom right;
+    position: absolute; /* Ensure positioning is relative */
+    top: 83%;
+    bottom: 0;
+    right: -14%;
+}
+
+.diagonal-rectangle5 {
+    width: 33%;
+    height: 4%;
+    background-color: #b1d0d8;
+    border-radius: 100px;
+    transform: rotate(-45deg); /* Rotate the rectangle by 45 degrees */
+    transform-origin: bottom right;
+    position: absolute; /* Ensure positioning is relative */
+    top: 72.4%;
+    bottom: 0;
+    right: -14%;
+}
+
+.diagonal-rectangle6 {
+    width: 26%;
+    height: 1%;
+    background-color: #b1d0d8;
+    border-radius: 100px;
+    transform: rotate(-45deg); /* Rotate the rectangle by 45 degrees */
+    transform-origin: bottom right;
+    position: absolute; /* Ensure positioning is relative */
+    top: 99%;
+    bottom: 0;
+    right: -14%;
+}
+
+.diagonal-rectangle7 {
+    width: 30%;
+    height: 4%;
+    background-color: #b1d0d8;
+    border-radius: 100px;
+    transform: rotate(-45deg); /* Rotate the rectangle by 45 degrees */
+    transform-origin: bottom right;
+    position: absolute; /* Ensure positioning is relative */
+    top: 102%;
+    bottom: 0;
+    right: -14%;
+}
+
+@media (max-width: 768px){
+   .rectangle {
+       flex-basis: calc(100% - 20px);
+   }
+}
