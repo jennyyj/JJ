@@ -1,109 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
    <link rel="stylesheet" type="text/css" href="modeling.css">
-   <style>
-      /* Sidebar CSS */
-      .sidebar {
-        position: fixed;
-   top: 170px;
-   left: 0;
-   width: 80px; /* Adjusted width */
-   height: 170px;
-   background-color: #707fa4;
-   color: #555;
-   padding: 10px;
-   font-family: 'Montserrat', sans-serif; /* Setting font to Montserrat */
-   overflow-y: auto;
-}
-
-.sidebar a {
-   display: block;
-   color: #000;
-   text-decoration: none;
-   margin-bottom: 10px;
-   padding: 8px; /* Add padding to create a rectangle effect */
-   border-radius: 20px; /* Add border-radius for rounded corners */
-   background-color: #aed8e4; /* Add background color for each link */
-   text-align: right;
-   font-size: 10px;
-   margin-left: -20px;
-}
-
-.sidebar a:hover {
-   background-color: #b1d0d8; /* Change background color on hover */
-}
-
-.sidebar a:first-child {
-    margin-top: 0px;
-}
-   </style>
+   <script src="modeling.js"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="icon" type="image/x-icon" href="images/modeling.ico" />
+   <title>Modeling/Photography</title>
 </head>
 <body>
-   <div class="sidebar">
-      <a href="jennyj.html">Home</a>
-      <a href="modeling.html">Modeling/ Photography</a>
-      <a href="traveling.html">Traveling</a>
-      <a href="resume.html">Resume</a>
-   </div>
-   <div class="vertical-line"></div>
-   <div class="left-section">
-    <h2>Modeling Profolio</h2>
-    <p>I started Modeling in 2023. Since then I have been able to model for multiple brands. Be in a fast pace enviroment by walking in Miami Swim Week, involved with professional photo/commercial shoots and gain high organizational skills by managing myself and other models. </p>
+    <nav class="navbar">
+        <ul class="no-bullets nav-menu">
+            <li class="nav-item">
+                <a href="#" id="dropdownToggle" class="nav-link">
+                    <div class="hamburger-icon">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </a>
+                <ul id="dropdownMenu" class="dropdown-menu">
+                    <li><a href="jennyj.html">Home page</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#">ShiftGrab</a></li>
+                    <li><a href="https://classicvibes.co/">Classic Vibes</a></li>
+                    <li><a href="traveling.html">Traveling</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="rectangle centered-text" id="rect1">Modeling</div>
+    <div class="rectangle centered-text" id="rect2">Photography</div>
+    <div class="rectangle" id="rect3"></div>
+    <div class="rectangle" id="rect4"></div>
+    <div class="rectangle" id="rect5"></div>
+    <div class="rectangle" id="rect6"></div>
+    <div class="rectangle" id="rect7"></div>
+    <div class="rectangle" id="rect8"></div>
+    <div class="rectangle" id="rect9"></div>
+    <div class="rectangle centered-text" id="rect10"><ul class="no-bullets">
+        <li>I started my modeling journey at the beginning of 2023, and since then, I've had the incredible opportunity to work with various agencies, walk in Miami Swim Week, and even be featured in Vogue. This experience has been both exciting and challenging, as I've learned to manage myself and assist other models in a fast-paced environment.</li>
+        <li>Being involved in different aspects of the industry—from photoshoots and agency meetings to commercials—has taught me a lot about time management, teamwork, and staying organized. I've enjoyed every moment, whether it's been preparing for a shoot or navigating the business side of things. Overall, this experience has been an amazing learning opportunity, allowing me to grow both professionally and personally in the fashion and media world.</li></div>
+    </ul>
+    <div class="rectangle centered-text" id="rect11"><ul class="no-bullets">
+        <li>I got into photography after being inspired by the photographers I worked with during my modeling shoots. Recognizing that many models were having a hard time finding photographers they felt comfortable with, I decided to learn photography myself. Thanks to my ability to pick up new skills quickly, I was able to transition smoothly into this role and started shooting for them.</li>
+        <li>Since then, I've enjoyed capturing a wide range of subjects, from sports shoots to stunning hotel scenery. My work has been well-received, with some photos even being used by top agencies around the world. This experience has not only allowed me to develop my skills behind the camera but also to help others by providing them with the imagery they need for their portfolios and projects. It's been an exciting journey, and I'm grateful for the opportunities to grow and explore my creativity in the world of photography.</li></div>
+    </ul>
+<div class="carousel-wrapper">    
+    <div class="carousel-container" id="carousel1">
+        <div class="carousel">
+            <div class="carousel-photo" style="background-image: url('images/21.jpg');" data-src="images/21.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/22.jpg');" data-src="images/22.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/23.png');" data-src="images/23.png"></div>
+            <div class="carousel-photo" style="background-image: url('images/24.png');" data-src="images/24.png"></div>
+            <div class="carousel-photo" style="background-image: url('images/25.png');" data-src="images/25.png"></div>
+            <div class="carousel-photo" style="background-image: url('images/26.jpg');" data-src="images/26.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/27.png');" data-src="images/27.png"></div>
+            <div class="carousel-photo" style="background-image: url('images/28.jpg');" data-src="images/28.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/29.jpg');" data-src="images/29.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/30.png');" data-src="images/30.png"></div>
+            <div class="carousel-photo" style="background-image: url('images/31.jpg');" data-src="images/31.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/32.png');" data-src="images/32.png"></div>
+            <div class="carousel-photo" style="background-image: url('images/33.png');" data-src="images/33.png"></div>
+            <div class="carousel-photo" style="background-image: url('images/34.jpg');" data-src="images/34.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/35.jpg');" data-src="images/35.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/36.png');" data-src="images/36.png"></div>
+            <div class="carousel-photo" style="background-image: url('images/37.jpg');" data-src="images/37.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/38.jpg');" data-src="images/38.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/39.jpg');" data-src="images/39.jpg"></div>
+    </div>
+    <div class="carousel-controls">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+    <div class="carousel-dots"></div>
 </div>
-<div class="right-section">
-    <h2>Photography Profolio</h2>
-    <p>Halfway through modeling, I picked up photography! I worked with many photographers and gained knowledge on editing/lens/cameras then began my own side job for fun that grew to these photos being published and used in professional settings. (i.e. 4 and 5 star hotels/modeling agencies/athletics)</p>
-</div>
-<div class="container">
-    <div class="modeling-photo" style="background-image: url('1.jpg');" data-src="1.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('2.jpg');" data-src="2.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('3.jpg');" data-src="3.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('4.png');" data-src="4.png"></div>
-    <div class="modeling-photo" style="background-image: url('5.jpeg');" data-src="5.jpeg"></div>
-    <div class="modeling-photo" style="background-image: url('6.jpg');" data-src="6.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('7.jpg');" data-src="7.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('8.png');" data-src="8.png"></div>
-    <div class="modeling-photo" style="background-image: url('9.jpg');" data-src="9.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('10.jpg');" data-src="10.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('11.jpg');" data-src="11.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('12.png');" data-src="12.png"></div>
-    <div class="modeling-photo" style="background-image: url('13.jpeg');" data-src="13.jpeg"></div>
-    <div class="modeling-photo" style="background-image: url('14.jpeg');" data-src="14.jpeg"></div>
-    <div class="modeling-photo" style="background-image: url('15.jpg');" data-src="15.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('16.png');" data-src="16.png"></div>
-    <div class="modeling-photo" style="background-image: url('17.jpg');" data-src="17.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('18.jpeg');" data-src="18.jpeg"></div>
-    <div class="modeling-photo" style="background-image: url('19.jpg');" data-src="19.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('20.png');" data-src="20.png"></div>
-    <div class="modeling-photo" style="background-image: url('21.jpeg');" data-src="21.jpeg"></div>
-    <div class="modeling-photo" style="background-image: url('22.jpeg');" data-src="22.jpeg"></div>
-    <div class="modeling-photo" style="background-image: url('23.jpg');" data-src="23.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('24.png');" data-src="24.png"></div>
-    <div class="modeling-photo" style="background-image: url('25.jpg');" data-src="25.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('26.jpg');" data-src="26.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('27.jpg');" data-src="27.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('28.png');" data-src="28.png"></div>
-    <div class="modeling-photo" style="background-image: url('29.jpg');" data-src="29.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('30.jpeg');" data-src="30.jpeg"></div>
-    <div class="modeling-photo" style="background-image: url('31.jpg');" data-src="31.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('32.png');" data-src="32.png"></div>
-    <div class="modeling-photo" style="background-image: url('33.jpg');" data-src="33.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('34.jpg');" data-src="34.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('35.jpg');" data-src="35.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('36.jpg');" data-src="36.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('37.jpg');" data-src="37.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('38.jpg');" data-src="38.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('39.jpg');" data-src="39.jpg"></div>
-    <div class="modeling-photo" style="background-image: url('40.jpg');" data-src="40.jpg"></div>
 
-   <div class="modal-container" id="modal-container">
+<!-- Second Carousel -->
+<div class="carousel-container" id="carousel2">
+    <div class="carousel">
+        <div class="carousel-photo" style="background-image: url('images/1.jpeg');" data-src="images/1.jpeg"></div>
+            <div class="carousel-photo" style="background-image: url('images/2.jpg');" data-src="images/2.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/3.jpeg');" data-src="images/3.jpeg"></div>
+            <div class="carousel-photo" style="background-image: url('images/4.jpg');" data-src="images/4.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/5.jpg');" data-src="images/5.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/6.jpg');" data-src="images/6.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/7.jpg');" data-src="images/7.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/8.jpeg');" data-src="images/8.jpeg"></div>
+            <div class="carousel-photo" style="background-image: url('images/9.jpg');" data-src="images/9.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/10.jpeg');" data-src="images/10.jpeg"></div>
+            <div class="carousel-photo" style="background-image: url('images/11.jpg');" data-src="images/11.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/12.jpg');" data-src="images/12.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/13.jpg');" data-src="images/13.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/14.jpg');" data-src="images/14.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/15.jpeg');" data-src="images/15.jpeg"></div>
+            <div class="carousel-photo" style="background-image: url('images/16.jpg');" data-src="images/16.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/17.jpeg');" data-src="images/17.jpeg"></div>
+            <div class="carousel-photo" style="background-image: url('images/18.jpg');" data-src="images/18.jpg"></div>
+            <div class="carousel-photo" style="background-image: url('images/19.jpeg');" data-src="images/19.jpeg"></div>
+            <div class="carousel-photo" style="background-image: url('images/20.jpeg');" data-src="images/20.jpeg"></div>
+    </div>
+    <div class="carousel-controls">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+    <div class="carousel-dots"></div>
+</div>
+<div class="modal-container" id="modal-container">
     <div class="modal" id="modal">
         <span class="close" id="close">&times;</span>
         <img class="modal-content" id="modal-content">
     </div>
-
-   <script src="modeling.js"></script>
+</div>
 </body>
 </html>
-

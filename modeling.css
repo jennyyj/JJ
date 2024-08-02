@@ -1,90 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 body {
-    background-color: #707fa4;
+    background-color: #dcf4f7;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrollbar */
-    font-family: 'Montserrat', sans-serif; /* Set Montserrat as the default font */
- }
-
- .vertical-line {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 2px; /* Adjust thickness of the line */
-    background-color: #000; /* Adjust color of the line */
-    transform: translateX(-50%); /* Move the line back by half its width */
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 
-
-.left-section,
-.right-section {
-    position: absolute;
-    width: calc(50% - 1px); /* Half the width of the viewport minus the line width */
-    padding: 20px; /* Adjust padding as needed */
-    box-sizing: border-box; /* Include padding in the width calculation */
-}
-
-.left-section {
-    left: 0;
-}
-
-.right-section {
-    right: 0;
-}
-
-h2 {
-    margin-top: 0;
-    font-weight: 400;
-}
-
-p {
-    margin-top: 10px;
-    font-weight: 400;
-}
-
-.container {
+/* Flexbox container for carousels */
+.carousel-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 20px;
+    position: relative;
 }
 
-.modeling-photo {
+.carousel-container {
+    width: 45%; /* Adjust width as needed */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Adjust margin and position to stagger carousels */
+#carousel1 {
+    margin-top: 70vw; 
+    margin-left: 5vw;
+}
+
+#carousel2 {
+    margin-top: 6vw; /* Adjust as needed to stagger vertically */
+    margin-right: 4vw; /* Optional: Adjust to stagger horizontally */
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-photo {
     background-size: cover;
-    width: 20%; /* Adjust width as needed */
-    height: 350px; /* Adjust height as needed */
-    border-radius: 10px; /* Optional: add border radius for rounded corners */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    margin: 10px 10px 10px 10px;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+    position: relative;
 }
 
-/* Apply different margins to specific photo numbers */
-.modeling-photo:nth-child(1) {
-    margin-top: 150px; /* Adjust margin for photo number 1 */
+.carousel-photo::before {
+    content: '';
+    display: block;
+    padding-top: 56.25%; 
 }
 
-.modeling-photo:nth-child(2) {
-    margin-top: 150px; /* Adjust margin for photo number 2 */
+.carousel-controls {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 95%;
+    width: 58%;
+    left: 9vw;
+    justify-content: space-between;
 }
 
-.modeling-photo:nth-child(3) {
-    margin-top: 150px; /* Adjust margin for photo number 3 */
+.carousel-controls button {
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    color: #bbb;
+    cursor: pointer;
 }
 
-.modeling-photo:nth-child(4) {
-    margin-top: 150px; /* Adjust margin for photo number 4 */
+.carousel-dots {
+    text-align: center;
+    margin-top: 10px;
 }
 
-.modeling-photo:hover {
-    opacity: 0.8; /* Reduce opacity on hover */
+.carousel-dots span {
+    cursor: pointer;
+    height: 5px;
+    width: 5px;
+    margin: 0 2px;
+    background-color: #dcf4f7;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.photo-link {
-    display: block; /* Ensure the link covers the entire photo */
+.active-dot {
+    background-color: #717171;
 }
 
 .modal-container {
@@ -101,7 +108,7 @@ p {
 
 .modal {
     background-color: #fefefe;
-    margin: 10% auto;
+    margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
@@ -128,485 +135,229 @@ p {
     height: auto;
 }
 
- .modeling-photo1 {
-    background-image: url('1.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: 170px; /* Move photo 50px down from its original position */
-    left: 140px; /* Move photo 20px to the right from its original position */
+.rectangle {
+    background-color: #f0f2cf;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-right: 2%;
 }
 
-
-.modeling-photo2 {
-    background-image: url('2.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -130px; /* Move photo 50px down from its original position */
-    left: 400px; /* Move photo 20px to the right from its original position */
+.centered-text {
+    font-size: 1.5vw;
+    color: #333;
+    text-align: center;
 }
 
-.modeling-photo3 {
-    background-image: url('3.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -120px; /* Move photo 50px down from its original position */
-    left: 140px; /* Move photo 20px to the right from its original position */
+ul.no-bullets {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove default padding */
+    margin: 0; 
 }
 
-.modeling-photo4 {
-    background-image: url('4.png');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -420px; /* Move photo 50px down from its original position */
-    left: 400px; /* Move photo 20px to the right from its original position */
+/* Headers */
+
+#rect1 {
+    top: 6vw;
+    left: 8vw;
+    width: 40vw;
+    height: 6vw;
+    border-radius: 0;
+    background-color: #ffecd8;
 }
 
-.modeling-photo5 {
-    background-image: url('5.jpeg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -410px; /* Move photo 50px down from its original position */
-    left: 140px; /* Move photo 20px to the right from its original position */
+#rect2 {
+    top: 70vw;
+    left: 50vw;
+    width: 40vw;
+    height: 6vw;
+    border-radius: 0;
+    background-color: #ffecd8;
 }
 
-.modeling-photo6 {
-    background-image: url('6.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -710px; /* Move photo 50px down from its original position */
-    left: 400px; /* Move photo 20px to the right from its original position */
+/* Design rectangles */
+#rect3, #rect4, #rect5, #rect6, #rect7, 
+#rect8, #rect9  {
+    position: absolute;
 }
 
-.modeling-photo7 {
-    background-image: url('7.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -700px; /* Move photo 50px down from its original position */
-    left: 140px; /* Move photo 20px to the right from its original position */
+#rect3 {
+    width: 25vw;
+    height: 6vw;
+    top: -1vw;
+    left: 60vw;
+    transform: rotate(-40deg);
+    border-radius: 100px;
+    background-color: #e2b055;
 }
 
-.modeling-photo8 {
-    background-image: url('8.png');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -1000px; /* Move photo 50px down from its original position */
-    left: 400px; /* Move photo 20px to the right from its original position */
+#rect4 {
+    width: 10vw;
+    height: 1vw;
+    top: 13vw;
+    left: 92vw;
+    transform: rotate(-40deg);
+    background-color: #e2b055;
 }
 
-.modeling-photo9 {
-    background-image: url('9.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -990px; /* Move photo 50px down from its original position */
-    left: 140px; /* Move photo 20px to the right from its original position */
+#rect5 {
+    width: 50vw;
+    height: 8vw;
+    top: 155vw;
+    left: 60vw;
+    transform: rotate(45deg);
+    border-radius: 100px;
+    background-color: #e2b055;
 }
 
-.modeling-photo10 {
-    background-image: url('10.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -1290px; /* Move photo 50px down from its original position */
-    left: 400px; /* Move photo 20px to the right from its original position */
+#rect6 {
+    width: 25vw;
+    height: 7vw;
+    top: 15vw;
+    left: 90vw;
+    border-radius: 200px;
+    transform: rotate(-40deg);
+    background-color: #eec7be;
 }
 
-.modeling-photo11 {
-    background-image: url('11.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -1280px; /* Move photo 50px down from its original position */
-    left: 140px; /* Move photo 20px to the right from its original position */
+#rect7 {
+    width: 25vw;
+    height: 1vw;
+    top: 130vw;
+    left: 85vw;
+    transform: rotate(45deg);
+    background-color: #eec7be;
 }
 
-.modeling-photo12 {
-    background-image: url('12.png');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -1580px; /* Move photo 50px down from its original position */
-    left: 400px; /* Move photo 20px to the right from its original position */
+#rect8 {
+    width: 25vw;
+    height: 17vw;
+    top: -8vw;
+    left: 80vw;
+    transform: rotate(-40deg);
+    border-radius: 200px;
+    background-color: #f0f2cf;
 }
 
-.modeling-photo13 {
-    background-image: url('13.jpeg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -1570px; /* Move photo 50px down from its original position */
-    left: 140px; /* Move photo 20px to the right from its original position */
+#rect9 {
+    width: 50vw;
+    height: 20vw;
+    top: 130vw;
+    left: 65vw;
+    transform: rotate(45deg);
+    border-radius: 200px;
+    background-color: #f0f2cf;
 }
 
-.modeling-photo14 {
-    background-image: url('14.jpeg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -1870px; /* Move photo 50px down from its original position */
-    left: 400px; /* Move photo 20px to the right from its original position */
+/* text boxes */
+#rect10 {
+    width: 40vw;
+    height: 30vw;
+    top: 15vw;
+    left: 9vw;
+    background-color: #dcf4f7;
+    position: absolute;
 }
 
-.modeling-photo15 {
-    background-image: url('15.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -1860px; /* Move photo 50px down from its original position */
-    left: 140px; /* Move photo 20px to the right from its original position */
+#rect11 {
+    width: 40vw;
+    height: 35vw;
+    top: 80vw;
+    left: 51.5vw;
+    background-color: #dcf4f7;
+    position: absolute;
 }
 
-.modeling-photo16 {
-    background-image: url('16.png');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -2160px; /* Move photo 50px down from its original position */
-    left: 400px; /* Move photo 20px to the right from its original position */
+/* SideBar Style */
+
+.navbar {
+    position: relative;
 }
 
-.modeling-photo17 {
-    background-image: url('17.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -2150px; /* Move photo 50px down from its original position */
-    left: 140px; /* Move photo 20px to the right from its original position */
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding-left: 2vw;
+    padding-top: 2vw;
+    z-index: 1;
 }
 
-.modeling-photo18 {
-    background-image: url('18.jpeg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -2450px; /* Move photo 50px down from its original position */
-    left: 400px; /* Move photo 20px to the right from its original position */
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: #00515b;
+    margin: 4px 0;
+    transition: 0.3s;
+    border-radius: 20px;
+    z-index: 1;
 }
 
-.modeling-photo19 {
-    background-image: url('19.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -2440px; /* Move photo 50px down from its original position */
-    left: 140px; /* Move photo 20px to the right from its original position */
+/* Dropdown menu styles */
+.dropdown-menu {
+    overflow: hidden; /* Ensure content is hidden during transition */
+    height: 0; /* Start with height 0 */
+    position: absolute;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f2cf;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(240, 242, 207, 0.9);
+    transition: height 0.5s ease; /* Animate height */
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
 }
 
-/* Start of Photography photos */
-.modeling-photo20 {
-    background-image: url('20.png');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -5530px; /* Move photo 50px down from its original position */
-    left: 790px; /* Move photo 20px to the right from its original position */
+.dropdown-menu.show {
+    height: auto; /* Allow content to define height when shown */
 }
 
-.modeling-photo21 {
-    background-image: url('21.jpeg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -5830px; /* Move photo 50px down from its original position */
-    left: 1050px; /* Move photo 20px to the right from its original position */
+.dropdown-menu li {
+    padding: 20px;
 }
 
-.modeling-photo22 {
-    background-image: url('22.jpeg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -5820px; /* Move photo 50px down from its original position */
-    left: 790px; /* Move photo 20px to the right from its original position */
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-family: 'Montserrat', sans-serif; /* Apply font-family to links */
+    font-size: 16px; 
+    text-align: center;
 }
 
-.modeling-photo23 {
-    background-image: url('23.JPG');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -6120px; /* Move photo 50px down from its original position */
-    left: 1050px; /* Move photo 20px to the right from its original position */
+.dropdown-menu li a:hover {
+    background-color: #dcf4f7;
+    border-radius: 20px;
 }
 
-.modeling-photo24 {
-    background-image: url('24.png');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -6110px; /* Move photo 50px down from its original position */
-    left: 790px; /* Move photo 20px to the right from its original position */
+@media screen and (max-width: 768px) {
+    .carousel-controls button {
+        font-size: 1.5em; /* Reduce size of the arrows */
+        padding: 1px; /* Reduce padding */
+    }
+
+    .carousel-dots .dot {
+        height: 1px; /* Reduce size of the dots */
+        width: 1px;
+    }
 }
 
-.modeling-photo25 {
-    background-image: url('25.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -6410px; /* Move photo 50px down from its original position */
-    left: 1050px; /* Move photo 20px to the right from its original position */
-}
+/* Media Query for very small screens */
+@media screen and (max-width: 480px) {
+    .carousel-controls button {
+        font-size: 1em; /* Further reduce size of the arrows */
+        padding: 1px; /* Further reduce padding */
+    }
 
-.modeling-photo26 {
-    background-image: url('26.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -6400px; /* Move photo 50px down from its original position */
-    left: 790px; /* Move photo 20px to the right from its original position */
+    .carousel-dots .dot {
+        height: 1px; /* Further reduce size of the dots */
+        width: 1px;
+    }
 }
-
-.modeling-photo27 {
-    background-image: url('27.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -6700px; /* Move photo 50px down from its original position */
-    left: 1050px; /* Move photo 20px to the right from its original position */
-}
-
-.modeling-photo28 {
-    background-image: url('28.png');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -6690px; /* Move photo 50px down from its original position */
-    left: 790px; /* Move photo 20px to the right from its original position */
-}
-
-.modeling-photo29 {
-    background-image: url('29.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -6990px; /* Move photo 50px down from its original position */
-    left: 1050px; /* Move photo 20px to the right from its original position */
-}
-
-.modeling-photo30 {
-    background-image: url('30.jpeg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -6980px; /* Move photo 50px down from its original position */
-    left: 790px; /* Move photo 20px to the right from its original position */
-}
-
-.modeling-photo31 {
-    background-image: url('31.JPG');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -7280px; /* Move photo 50px down from its original position */
-    left: 1050px; /* Move photo 20px to the right from its original position */
-}
-
-.modeling-photo32 {
-    background-image: url('32.png');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -7270px; /* Move photo 50px down from its original position */
-    left: 790px; /* Move photo 20px to the right from its original position */
-}
-
-.modeling-photo33 {
-    background-image: url('33.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -7570px; /* Move photo 50px down from its original position */
-    left: 1050px; /* Move photo 20px to the right from its original position */
-}
-
-.modeling-photo34 {
-    background-image: url('34.JPG');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -7560px; /* Move photo 50px down from its original position */
-    left: 790px; /* Move photo 20px to the right from its original position */
-}
-
-.modeling-photo35 {
-    background-image: url('35.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -7860px; /* Move photo 50px down from its original position */
-    left: 1050px; /* Move photo 20px to the right from its original position */
-}
-
-.modeling-photo36 {
-    background-image: url('36.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -7850px; /* Move photo 50px down from its original position */
-    left: 790px; /* Move photo 20px to the right from its original position */
-}
-
-.modeling-photo37 {
-    background-image: url('37.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -8150px; /* Move photo 50px down from its original position */
-    left: 1050px; /* Move photo 20px to the right from its original position */
-}
-
-.modeling-photo38 {
-    background-image: url('38.jpg');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -8140px; /* Move photo 50px down from its original position */
-    left: 790px; /* Move photo 20px to the right from its original position */
-}
-
-.modeling-photo39 {
-    background-image: url('39.JPG');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -8440px; /* Move photo 50px down from its original position */
-    left: 1050px; /* Move photo 20px to the right from its original position */
-}
-
-.modeling-photo40 {
-    background-image: url('40.JPG');
-    background-size: cover;
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    border-radius: 5px; /* Optional: add border radius for rounded corners */
-    margin-right: 20px; /* Optional: add margin to space photos */
-    position: relative; /* Enable positioning */
-    top: -8430px; /* Move photo 50px down from its original position */
-    left: 790px; /* Move photo 20px to the right from its original position */
-}
-

@@ -1,93 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   <link rel="stylesheet" type="text/css" href="resume.css">
-   <style>
-      /* Sidebar CSS */
-      .sidebar {
-        position: fixed;
-   top: 170px;
-   left: 0;
-   width: 80px; /* Adjusted width */
-   height: 170px;
-   background-color: #707fa4;
-   color: #555;
-   padding: 10px;
-   font-family: 'Montserrat', sans-serif; /* Setting font to Montserrat */
-   overflow-y: auto;
-}
-
-.sidebar a {
-   display: block;
-   color: #000;
-   text-decoration: none;
-   margin-bottom: 10px;
-   padding: 8px; /* Add padding to create a rectangle effect */
-   border-radius: 20px; /* Add border-radius for rounded corners */
-   background-color: #aed8e4; /* Add background color for each link */
-   text-align: right;
-   font-size: 10px;
-   margin-left: -20px;
-}
-
-.sidebar a:hover {
-   background-color: #b1d0d8; /* Change background color on hover */
-}
-
-.sidebar a:first-child {
-    margin-top: 0px;
-}
-   </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resume.css">
+    <title>Resume</title>
 </head>
 <body>
-    <div class="plain-rectangle1"></div>
-    <div class="empty-rectangle">
-        <img class="image1" src="resumepic.png" alt="Image 1">
-    <img class="image2" src="phone.png" alt="Image 2">
-    <p class="text1">954-328-5258</p>
-    <img class="image3" src="email.png" alt="Image 3">
-    <p class="text2">jennyyyjacob@gmail.com</p>
-    <img class="image4" src="location.png" alt="Image 4">
-    <p class="text3">Fort Lauderdale, Florida</p>
-    <div class="rectangle1"></div>
-    <p class="text4">Education</p>
-    <p class="text5">BA Computer Science</p>  
-    <p class="text6">Florida Atlantic University</p>  
-    <p class="text7">2022-2024</p>  
-    <p class="text8">Minor in Artificial Intelligence</p>  
-    <p class="text9">Florida Atlantic University</p>  
-    <p class="text10">2022-2024</p>  
-    <div class="rectangle2"></div>
-    <img class="image5" src="computer.png" alt="Image 5">
-    <p class="text11">Languages</p> 
-    <p class="text12">PYTHON</p> 
-    <p class="text13">HTML</p> 
-    <p class="text14">CSS</p> 
-    <p class="text15">JAVA SCRIPT</p> 
-    <p class="text16">SQL</p> 
-    <p class="text17">JAVA (Basic)</p>  
-    <p class="text18">C++ (Basic)</p> 
-    <div class="rectangle3"></div>
-    <p class="text19">Language</p> 
-    <p class="text20">English</p> 
-    <p class="text21">Spanish (Basic)</p>
-</div>
-<div class="section-container">
-    <div class="content-container">
-        <p class="text22">JENNY JACOB</p>
-    <p class="text23">Web Developer</p>
-    <img class="image6" src="skills.png" alt="Image 6">
-    <p class="text24">Skills</p>
-    <p class="text25">Hello! I appreciate you reviewing this resume and hope to speak with you further. Skills: Organized, Highly coachable with a willingness to learn new things. Teamwork/leadership. Microsoft Excel. Microsoft Power Automate. Database Management. Computer Programming. Web Development. UI/UX design.</p>
-    </div>
-</div>
-   <div class="sidebar">
-      <a href="jennyj.html">Home</a>
-      <a href="modeling.html">Modeling/ Photography</a>
-      <a href="traveling.html">Traveling</a>
-      <a href="resume.html">Resume</a>
-   </div>
-   <div class="resume-photo"></div>
+    <img src="images/name.png" class="nameimage" alt="Jenny Jacob">
+    <nav class="navbar">
+        <ul class="no-bullets nav-menu">
+            <li class="nav-item">
+                <a href="#" id="dropdownToggle" class="nav-link">
+                    <div class="hamburger-icon">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </a>
+                <ul id="dropdownMenu" class="dropdown-menu">
+                    <li><a href="jennyj.html">Home page</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#">ShiftGrab</a></li>
+                    <li><a href="https://classicvibes.co/">Classic Vibes</a></li>
+                    <li><a href="modeling.html">Modeling</a></li>
+                    <li><a href="traveling.html">Traveling</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="rectangle" id="rect1">
+            <div class="circle"></div>
+        </div>
+        <div class="rectangle centered-text" id="rect2">Objective</div>
+        <div class="rectangle centered-text" id="rect3">Work Experience</div>
+        <div class="rectangle centered-text" id="rect4">Education</div>
+        <div class="rectangle centered-text" id="rect5">Professional Resume</div>
+        <div class="rectangle centered-text" id="rect6">Computer Languages</div>
+        <div class="rectangle centered-text" id="rect7">Languages</div>
+        <div class="rectangle" id="rect8"></div>
+        <div class="rectangle" id="rect9"></div>
+        <div class="rectangle" id="rect10"></div>
+        <div class="rectangle" id="rect11"></div>
+        <div class="rectangle" id="rect12"></div>
+        <div class="rectangle" id="rect13"></div>
+        <div class="rectangle" id="rect14"></div>
+        <div class="rectangle" id="rect15"></div>
+        <div class="rectangle" id="rect16"></div>
+        <div class="rectangle centered-text" id="rect17">Hello! I am a recent computer science graduate with a solid foundation in programming, data structures, and algorithms. Currently I am seeking an entry-level position in software development to leverage my skills and passion for technology. I am eager to apply my knowledge in a practical setting, I aim to gain hands-on experience in software engineering, with a long-term goal of transitioning into machine learning engineering. Currently, I am committed to continuous learning and development, I aspire to contribute to innovative projects and grow within a dynamic tech company.</div>
+        <div class="rectangle left-text" id="rect18">
+            <ul class="no-bullets">
+                <li>Assistant Business Operations Director and Tech Assistant</li>
+                <li>Fresh Start Tax</li>
+                <li>2022-2024</li>
+            </ul>
+        </div>
+        <div class="rectangle left-text" id="rect19"><ul class="no-bullets">
+            <li>Tech Implementation and Support: Provided comprehensive training to staff on new technology systems and tools like PowerBI, quickbooks, Cloud services to confidently utilize office technology, which enhanced overall productivity and efficiency.</li>
+            <li>Data Analysis and Reporting: Developed automated reports and dashboards using Excel and PowerBI.</li>
+            <li>Filed individual and corporate tax returns and extensions.</li>
+        </div>
+        <div class="rectangle left-text" id="rect20"><ul class="no-bullets">
+            <li>Web Developer</li>
+            <li>Fort Lauderdale</li>
+            <li>2024</li>
+        </ul></div>
+        <div class="rectangle left-text" id="rect21"><ul class="no-bullets">
+            <li>Developed responsive and mobile-friendly web designs to ensure a seamless user experience across all devices.</li>
+            <li>Utilized version control systems such as Git to manage codebase and facilitate collaboration with team members.</li>
+            <li>Demonstrated strong problem-solving skills by optimizing website speed, increasing Google PageSpeed
+                Insights score from 65 to 90 through image optimization, code minification, and leveraging browser caching. Additionally, resolved compatibility issues across various browsers and devices, resulting in a 25% increase in cross-browser functionality and a 20% reduction in reported user issues.</li></div>
+        <div class="rectangle left-text" id="rect22">Indian River State College</div>
+        <div class="rectangle left-text" id="rect23"><ul class="no-bullets">
+            <li>Asscociate of the Arts</li>
+            <li>2019-2020</li>
+        </ul></div>
+        <div class="rectangle left-text" id="rect24">Florida Atlantic University</div>
+        <div class="rectangle left-text" id="rect25"><ul class="no-bullets">
+            <li>Bachelor of Arts in Computer Science</li>
+            <li>Minor in Artificial Intelligence</li>
+            <li>2022-2024</li>
+        </ul></div>
+        <div class="rectangle left-text" id="rect26"><a href="/Users/jennyjacob/Desktop/Personal Website/pdfs/resume.pdf" target="_blank" style="font-family: 'Montserrat', sans-serif; font-size: 1.5vw; color: black; text-decoration: none; "onmouseover="this.style.color='#0000FF'; this.style.textDecoration='underline';"
+            onmouseout="this.style.color='#333'; this.style.textDecoration='none';">Click Here to View a Professional Style Resume with more previous work.</a>
+        </div>
+        <div class="rectangle left-text" id="rect27"> <ul class="with-bullets">
+            <li>PYTHON</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>JAVA</li>
+            <li>SQL(Basic)</li> </li>
+            <li>C#(Basic)</li>
+            <li>SWIFT(Basic)</li>
+        </ul></div>
+        <div class="rectangle left-text" id="rect28">
+            <ul class="with-bullets">
+                <li>English</li>
+                <li>Spanish (Basic)</li>
+            </ul>
+        </div>
+    <script src="resume.js"></script>
 </body>
 </html>
-

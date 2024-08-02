@@ -1,36 +1,210 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 body {
-    background-color: #707fa4;
+    background-color: #dcf4f7;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    font-family: 'Montserrat', sans-serif; /* Set Montserrat as the default font */
  }
- 
- .header {
-    text-align: center; /* Center-align the text */
-    padding: 0 15%; /* Add padding for spacing */
-    background-color: #b1d0d8; /* Set background color */
-    position: absolute;
-    top: 4%;
-}
 
-.header h1 {
-    margin: 20; /* Remove default margin */
-    font-family: 'poppins', sans-serif;
-    font-size: 100%; /* Adjust font size */
-    font-weight: normal;
-    color: #000; /* Set text color */
-}
-
- #travel-map {
-    position: relative; /* Set the position of the container */
-    width: 80%; /* Adjust width as needed */
-    height: 600px; /* Set the height */
-    margin-bottom: 10px; /* Add margin bottom */
+#travel-map {
+    position: absolute; /* Set the position of the container to relative */
+    width: 65vw; /* Adjust width to fill available space */
+    height: 50vw; 
+    top: 44vw; 
+    left: 12vw;
+    margin-top: 20px; /* Add margin top */
+    overflow: hidden; /* Hide overflowing content */
 }
 
 #travel-map iframe {
     position: absolute; /* Set the position of the iframe */
-    top: 80%; /* Adjust top position */
-    left: 65%; /* Adjust left position */
-    transform: translate(-50%, -50%); /* Center the iframe */
+    width: 100%; /* Take up the full width of the container */
+    height: 100%; /* Take up the full height of the container */
     border: 0; /* Remove border */
+}
+
+.rectangle {
+    background-color: #f0f2cf;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-right: 2%;
+}
+
+.centered-text {
+    font-size: 1.5vw;
+    color: #333;
+    text-align: center;
+}
+
+ul.no-bullets {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove default padding */
+    margin: 0; 
+}
+
+/* Headers */
+
+#rect1 {
+    top: 10vw;
+    left: 12vw;
+    width: 65vw;
+    height: 6vw;
+    border-radius: 0;
+    background-color: #ffecd8;
+}
+
+/* Design rectangles */
+#rect3, #rect4, #rect5, #rect6, #rect7, 
+#rect8, #rect9  {
+    position: absolute;
+}
+
+#rect3 {
+    width: 25vw;
+    height: 6vw;
+    top: -6vw;
+    left: 68vw;
+    transform: rotate(-40deg);
+    border-radius: 100px;
+    background-color: #e2b055;
+}
+
+#rect4 {
+    width: 10vw;
+    height: 1vw;
+    top: 13vw;
+    left: 92vw;
+    transform: rotate(-40deg);
+    background-color: #e2b055;
+}
+
+#rect5 {
+    width: 40vw;
+    height: 8vw;
+    top: 138vw;
+    left: -10vw;
+    transform: rotate(-45deg);
+    border-radius: 100px;
+    background-color: #e2b055;
+}
+
+#rect6 {
+    width: 25vw;
+    height: 7vw;
+    top: 22vw;
+    left: 80vw;
+    border-radius: 200px;
+    transform: rotate(-40deg);
+    background-color: #eec7be;
+}
+
+#rect7 {
+    width: 28vw;
+    height: 1vw;
+    top: 113vw;
+    left: -15vw;
+    transform: rotate(-45deg);
+    background-color: #eec7be;
+}
+
+#rect8 {
+    width: 25vw;
+    height: 17vw;
+    top: -5vw;
+    left: 80vw;
+    transform: rotate(-40deg);
+    border-radius: 200px;
+    background-color: #f0f2cf;
+}
+
+#rect9 {
+    width: 50vw;
+    height: 20vw;
+    top: 110vw;
+    left: -15vw;
+    transform: rotate(-45deg);
+    border-radius: 200px;
+    background-color: #f0f2cf;
+}
+
+/* text boxes */
+#rect10 {
+    width: 55vw;
+    height: 20vw;
+    top: 20vw;
+    left: 18vw;
+    background-color: #dcf4f7;
+    position: absolute;
+}
+
+/* SideBar Style */
+
+.navbar {
+    position: relative;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding-left: 2vw;
+    padding-top: 2vw;
+    z-index: 1;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: #00515b;
+    margin: 4px 0;
+    transition: 0.3s;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    overflow: hidden; /* Ensure content is hidden during transition */
+    height: 0; /* Start with height 0 */
+    position: absolute;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f2cf;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(240, 242, 207, 0.9);
+    transition: height 0.5s ease; /* Animate height */
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+}
+
+.dropdown-menu.show {
+    height: auto; /* Allow content to define height when shown */
+}
+
+.dropdown-menu li {
+    padding: 20px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-family: 'Montserrat', sans-serif; /* Apply font-family to links */
+    font-size: 16px; 
+    text-align: center;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #dcf4f7;
+    border-radius: 20px;
 }

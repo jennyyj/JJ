@@ -1,403 +1,462 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 body {
-    background-color: #707fa4;
- }
-
-.plain-rectangle1 {
-    width: 70%; /* Set the width */
-    height: 15%; /* Set the height */
-    max-width: 70%;
-    min-width: none;
-    max-height: 15%;
-    min-height: auto;
-    background-color: #b1d0d8; /* Set the background color */
-    position: absolute;
-    top: 10%;
-    right: 12%;
-    /* You can add more properties like margin, padding, border-radius, etc. as needed */
+    font-family: 'Montserrat', sans-serif;
+    background-color: #dcf4f7;
+    margin: 0;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
 }
 
-.empty-rectangle {
-    width: 25%; /* Set initial width to 0 */
-    height: 200%; /* Set height to cover the entire height */
-    max-width: 25%;
-    min-width: none;
-    max-height: 200%;
-    min-height: auto;
-    position: absolute;
-    border-left: 1px solid #000; /* Set the left border */
-    border-right: 1px solid #000; /* Set the right border */
-    border-top: 1px  solid #000;
-    border-bottom: 1px solid #000;
-    top: 13%;
-    right: 55%;
+ul.no-bullets {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove default padding */
+    margin: 0; 
 }
 
-.empty-rectangle .image1 {
-    width: 80%; /* Set width of the image */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 80%;
-    min-width: none;
-    max-height: auto;
-    min-height: auto;
-    margin: 10%; /* Center the image horizontally */
+ul.with-bullets {
+    list-style-type: disc; /* Show bullet points */
+    padding-left: 0; /* Default padding for bullet points */
+    margin: 0; 
 }
 
-.empty-rectangle .image2 {
-    width: 8%; /* Set width of the image */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 8%;
-    min-width: none;
-    max-height: auto;
-    min-height: auto;
-    margin: 10%; /* Center the image horizontally */
-    position: absolute;
-    top: 17.5%;
-    right: 73%
+li {
+    font-size: 1.5vw; /* Match the font size to your existing text */
+    color: #333; /* Match the color to your existing text */
+    margin: 10px 0; /* Add some spacing between list items */
 }
 
-.empty-rectangle .text1 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 100%; /* Set the font size */
-    font-weight: normal; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 18.5%; /* Adjust the vertical position */
-    left: 20%; /* Adjust the horizontal position */
-}
-
-.empty-rectangle .image3 {
-    width: 8%; /* Set width of the image */
-    height: auto; /* Maintain aspect ratio */
-    margin: 10%; /* Center the image horizontally */
-    position: absolute;
-    top: 20%;
-    right: 73%
-}
-
-.empty-rectangle .text2 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 100%; /* Set the font size */
-    font-weight: normal; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 21%; /* Adjust the vertical position */
-    left: 20%; /* Adjust the horizontal position */
-}
-
-.empty-rectangle .image4 {
-    width: 8%; /* Set width of the image */
-    height: 1.5%; /* Maintain aspect ratio */
-    margin: 10%; /* Center the image horizontally */
-    position: absolute;
-    top: 22.5%;
-    right: 73%
-}
-
-.empty-rectangle .text3 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 100%; /* Set the font size */
-    font-weight: normal; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 23.5%; /* Adjust the vertical position */
-    left: 20%; /* Adjust the horizontal position */
-}
-
-.empty-rectangle .rectangle1 {
-    width: 68%; /* Set the width */
-    height: 2%; /* Set the height */
-    background-color: #b1d0d8; /* Set the background color */
-    position: absolute;
-    top: 29%;
-    right: 10%;
-}
-
-.empty-rectangle .text4 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 110%; /* Set the font size */
-    font-weight: bold; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 28.4%; /* Adjust the vertical position */
-    left: 11.6%; /* Adjust the horizontal position */
-}
-
-.empty-rectangle .text5 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 100%; /* Set the font size */
-    font-weight: bold; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 31.5%; /* Adjust the vertical position */
-    left: 11.6%; /* Adjust the horizontal position */
-}
-
-.empty-rectangle .text6 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 82%; /* Set the font size */
-    font-weight: bold; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 32.8%; /* Adjust the vertical position */
-    left: 11.6%; /* Adjust the horizontal position */
-}
-
-.empty-rectangle .text7 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 73%; /* Set the font size */
-    font-weight: normal; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 34%; /* Adjust the vertical position */
-    left: 11.6%; /* Adjust the horizontal position */
-}
-
-.empty-rectangle .text8 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 100%; /* Set the font size */
-    font-weight: bold; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 36%; /* Adjust the vertical position */
-    left: 11.6%; /* Adjust the horizontal position */
-}
-
-.empty-rectangle .text9 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 82%; /* Set the font size */
-    font-weight: bold; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 37.3%; /* Adjust the vertical position */
-    left: 11.6%; /* Adjust the horizontal position */
-}
-
-.empty-rectangle .text10 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 73%; /* Set the font size */
-    font-weight: normal; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 38.5%; /* Adjust the vertical position */
-    left: 11.6%; /* Adjust the horizontal position */
+.nameimage {
+    width: 65vw; /* Adjust width as needed */
+    height: 80vw; /* Maintain aspect ratio */
+    position: absolute; /* Positioning context within the rectangle */
+    top: -10vw; /* Adjust top position */
+    left: 31vw; 
 }
 
 
-.empty-rectangle .rectangle2 {
-    width: 68%; /* Set the width */
-    height: 2%; /* Set the height */
-    background-color: #b1d0d8; /* Set the background color */
-    position: absolute;
-    top: 45%;
-    right: 10%;
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.empty-rectangle .image5 {
-    width: 21%; /* Set width of the image */
-    height: 5%; /* Maintain aspect ratio */
-    margin: 10%; /* Center the image horizontally */
-    position: absolute;
-    top: 41.7%;
-    right: 66%
+.rectangle {
+    background-color: #f0f2cf;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-right: 2%;
 }
 
-.empty-rectangle .text11 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 110%; /* Set the font size */
-    font-weight: bold; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 44.4%; /* Adjust the vertical position */
-    left: 19%; /* Adjust the horizontal position */
-}
-
-.empty-rectangle .text12 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 80%; /* Set the font size */
-    font-weight: normal; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 48%; /* Adjust the vertical position */
-    left: 11.6%; /* Adjust the horizontal position */
-}
-
-.empty-rectangle .text13 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 80%; /* Set the font size */
-    font-weight: normal; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 51%; /* Adjust the vertical position */
-    left: 11.6%; /* Adjust the horizontal position */
-}
-
-.empty-rectangle .text14 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 80%; /* Set the font size */
-    font-weight: normal; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 54%; /* Adjust the vertical position */
-    left: 11.6%; /* Adjust the horizontal position */
-}
-
-.empty-rectangle .text15 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 80%; /* Set the font size */
-    font-weight: normal; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 57%; /* Adjust the vertical position */
-    left: 11.6%; /* Adjust the horizontal position */
-}
-
-.empty-rectangle .text16 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 80%; /* Set the font size */
-    font-weight: normal; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 48%; /* Adjust the vertical position */
-    right: 40.6%; /* Adjust the horizontal position */
-}
-
-.empty-rectangle .text17 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 80%; /* Set the font size */
-    font-weight: normal; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 51%; /* Adjust the vertical position */
-    right: 22.8%; /* Adjust the horizontal position */
-}
-
-.empty-rectangle .text18 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 80%; /* Set the font size */
-    font-weight: normal; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 54%; /* Adjust the vertical position */
-    right: 24.5%; /* Adjust the horizontal position */
-}
-.empty-rectangle .rectangle3 {
-    width: 68%; /* Set the width */
-    height: 2%; /* Set the height */
-    background-color: #b1d0d8; /* Set the background color */
-    position: absolute;
-    top: 63%;
-    right: 10%;
-}
-
-.empty-rectangle .text19 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 110%; /* Set the font size */
-    font-weight: bold; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 62.4%; /* Adjust the vertical position */
-    left: 11.6%; /* Adjust the horizontal position */
-}
-
-.empty-rectangle .text20 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 85%; /* Set the font size */
-    font-weight: Normal; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 66%; /* Adjust the vertical position */
-    left: 11.6%; /* Adjust the horizontal position */
-}
-
-.empty-rectangle .text21 {
-    font-family: 'poppins', sans-serif; /* Change the font family */
-    font-size: 85%; /* Set the font size */
-    font-weight: normal; /* Set the font weight */
-    text-align: center; /* Center-align the text */
-    margin-top: 5%; /* Add some space between image and text */
-    position: absolute; /* Position the text absolutely */
-    top: 69%; /* Adjust the vertical position */
-    left: 11.6%; /* Adjust the horizontal position */
-}
-
-.section-container {
-    max-width: 1000%;
-    max-height: 500%;
-    margin: 5% auto; /* Adjust margin for centering */
-}
-
-.text22 {
-    font-family: 'poppins', sans-serif;
-    font-size: 225%;
-    font-weight: bold;
+.centered-text {
+    font-size: 1.5vw;
+    color: #333;
     text-align: center;
-    position: absolute;
-    top: 15%; /* Adjust the vertical position */
-    left: 60%; /* Adjust the horizontal position */
-    transform: translateX(-50%); /* Center horizontally */
 }
 
-.text23 {
-    font-family: 'poppins', sans-serif;
-    font-size: 140%;
-    font-weight: normal;
+.left-text {
+    text-align: left;
+    text-indent: 20px;
+}
+
+.circle {
+    width: 25vw;
+    height: 25vw;
+    background-image: url("images/resumepic.JPG");
+    transform: rotate(30deg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+    border: 5px solid #eec7be;
+    margin-right: 2%;
+}
+
+/* circle pic rectangle */
+#rect1 {
+    width: 70vw;
+    height: 33vw;
+    border-radius: 400px;
+    top: 15vw;
+    left: -22vw;
+    transform: rotate(-30deg); 
+    background-color: #eec7be;
+    justify-content: flex-end;
+}
+
+/* text rectangles for headers 2-7 */
+#rect2 {
+    width: 48vw;
+    height: 6vw;
+    top: 8vw;
+    left: 42vw;
+    border-radius: 0;
+    background-color: #ffecd8;
+}
+
+#rect3 {
+    width: 48vw;
+    height: 6vw;
+    top: 30vw;
+    left: 42vw;
+    border-radius: 0;
+    background-color: #ffecd8;
+}
+
+#rect4 {
+    width: 48vw;
+    height: 6vw;
+    top: 95vw;
+    left: 42vw;
+    border-radius: 0;
+    background-color: #ffecd8;
+
+}
+
+#rect5 {
+    width: 30vw;
+    height: 6vw;
+    top: 8vw;
+    left: 6vw;
+    border-radius: 0;
+    background-color: #ffecd8;
+}
+
+#rect6 {
+    width: 30vw;
+    height: 6vw;
+    top: 77vw;
+    left: 6vw;
+    border-radius: 0;
+    position: absolute;
+    background-color: #ffecd8;
+}
+
+#rect7 {
+    width: 30vw;
+    height: 6vw;
+    top: 119vw;
+    left: 6vw;
+    border-radius: 0;
+    position: absolute;
+    background-color: #ffecd8;
+}
+
+#rect8 {
+    width: 25vw;
+    height: 0.5vw;
+    top: 17vw;
+    left: -10vw;
+    transform: rotate(-30deg);
+    background-color: #e2b055;
+    position: absolute;
+}
+
+#rect8, #rect9, #rect10, #rect11, #rect12, 
+#rect13, #rect14, #rect15, #rect16    {
+    position: absolute;
+}
+
+#rect9 {
+    width: 40vw;
+    height: 0.5vw;
+    top: 52vw;
+    left: -6vw;
+    transform: rotate(-30deg);
+    background-color: #e2b055;
+}
+
+#rect10 {
+    width: 25vw;
+    height: 6vw;
+    top: -10vw;
+    left: 68vw;
+    transform: rotate(-40deg);
+    border-radius: 100px;
+    background-color: #e2b055;
+}
+
+#rect11 {
+    width: 10vw;
+    height: 1vw;
+    top: 13vw;
+    left: 92vw;
+    transform: rotate(-40deg);
+    background-color: #e2b055;
+}
+
+#rect12 {
+    width: 40vw;
+    height: 8vw;
+    top: 176vw;
+    left: -10vw;
+    transform: rotate(-45deg);
+    border-radius: 100px;
+    background-color: #e2b055;
+}
+
+#rect13 {
+    width: 25vw;
+    height: 7vw;
+    top: 24vw;
+    left: 80vw;
+    border-radius: 200px;
+    transform: rotate(-40deg);
+    background-color: #eec7be;
+}
+
+#rect14 {
+    width: 25vw;
+    height: 1vw;
+    top: 150vw;
+    left: -15vw;
+    transform: rotate(-45deg);
+    background-color: #eec7be;
+}
+
+#rect15 {
+    width: 25vw;
+    height: 17vw;
+    top: -8vw;
+    left: 80vw;
+    transform: rotate(-40deg);
+    border-radius: 200px;
+    background-color: #f0f2cf;
+}
+
+#rect16 {
+    width: 50vw;
+    height: 20vw;
+    top: 147vw;
+    left: -15vw;
+    transform: rotate(-45deg);
+    border-radius: 200px;
+    background-color: #f0f2cf;
+}
+
+/* text boxes */
+#rect17 {
+    width: 48vw;
+    height: 20vw;
+    top: 48vw;
+    left: 42vw;
+    background-color: #dcf4f7;
+    position: absolute;
+}
+
+#rect18 {
+    width: 25vw;
+    height: 10vw;
+    top: 110vw;
+    left: 42vw;
+    position: absolute;
+    font-weight: bold; 
+    line-height: 0.8;  
+    text-align: left;
+    text-indent: 0;
+    background-color: #dcf4f7;
+}
+
+#rect19 {
+    width: 48vw;
+    height: 19vw;
+    top: 120vw;
+    left: 42vw;
+    position: absolute;
+    text-indent: 0;
+    background-color: #dcf4f7;
+}
+
+#rect20 {
+    width: 15vw;
+    height: 10vw;
+    top: 75vw;
+    left: 42vw;
+    position: absolute;
+    font-weight: bold; 
+    line-height: 0.8;  
+    text-align: left;
+    text-indent: 0;
+    background-color: #dcf4f7;
+    justify-content: flex-start;
+}
+
+#rect21 {
+    width: 48vw;
+    height: 25vw;
+    top: 84vw;
+    left: 42vw;
+    position: absolute;
+    text-indent: 0;
+    background-color: #dcf4f7;
+}
+
+#rect22 {
+    width: 60vw;
+    height: 3vw;
+    top: 147vw;
+    left: 42vw;
+    position: absolute;
+    font-weight: bold; 
+    line-height: 0.8;  
+    text-align: left;
+    font-size: 1.5vw;
+    text-indent: 0;
+    background-color: #dcf4f7;
+    justify-content: flex-start;
+}
+
+#rect23 {
+    width: 20vw;
+    height: 6vw;
+    top: 150vw;
+    left: 42vw;
+    line-height: 0.8;
+    position: absolute;
+    justify-content: flex-start;
+    text-indent: 0;
+    background-color: #dcf4f7;
+}
+
+#rect24 {
+    width: 30vw;
+    height: 3vw;
+    top: 160vw;
+    left: 42vw;
+    position: absolute;
+    font-weight: bold; 
+    line-height: 0.8;  
+    text-align: left;
+    font-size: 1.5vw;
+    text-indent: 0;
+    background-color: #dcf4f7;
+    justify-content: flex-start;
+}
+
+#rect25 {
+    width: 30vw;
+    height: 6vw;
+    top: 165vw;
+    left: 42vw;
+    position: absolute;
+    line-height: 0.8;
+    text-indent: 0;
+    justify-content: flex-start;
+    background-color: #dcf4f7;
+}
+
+#rect26 {
+    width: 30vw;
+    height: 6vw;
+    top: 68vw;
+    left: 6vw;
+    position: absolute;
     text-align: center;
-    position: absolute;
-    top: 22%; /* Adjust the vertical position */
-    left: 55%; /* Adjust the horizontal position */
-    transform: translateX(-50%); /* Center horizontally */
+    background-color: #dcf4f7;
 }
 
-.image6 {
-    width: 6%;
-    height: 10%;
-    margin: 10%;
+#rect27 {
+    width: 20vw;
+    height: 20vw;
+    top: 90vw;
+    left: 6vw;
     position: absolute;
-    top: 18%;
-    left: 38.5%; /* Adjust the horizontal position */
-    transform: translateX(-50%); /* Center horizontally */
+    background-color: #dcf4f7;
 }
 
-.text24 {
-    font-family: 'poppins', sans-serif;
-    font-size: 140%;
-    font-weight: bold;
+#rect28 {
+    width: 20vw;
+    height: 6vw;
+    top: 128vw;
+    left: 6vw;
+    position: absolute;
+    background-color: #dcf4f7;
+}
+
+/* Basic styling for the navbar */
+
+.navbar {
+    position: relative;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding-left: 2vw;
+    z-index: 1;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: #00515b;
+    margin: 4px 0;
+    transition: 0.3s;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    overflow: hidden; /* Ensure content is hidden during transition */
+    height: 0; /* Start with height 0 */
+    position: absolute;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f2cf;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(240, 242, 207, 0.9);
+    transition: height 0.5s ease; /* Animate height */
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+}
+
+.dropdown-menu.show {
+    height: auto; /* Allow content to define height when shown */
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-family: 'Montserrat', sans-serif; /* Apply font-family to links */
+    font-size: 16px; 
     text-align: center;
-    position: absolute;
-    top: 31%; /* Adjust the vertical position */
-    left: 53.6%; /* Adjust the horizontal position */
-    transform: translateX(-50%); /* Center horizontally */
 }
 
-.text25 {
-    font-family: 'poppins', sans-serif;
-    font-size: 100%;
-    font-weight: normal;
-    text-align: center;
-    position: absolute;
-    top: 36%; /* Adjust the vertical position */
-    left: 66%; /* Adjust the horizontal position */
-    transform: translateX(-50%); /* Center horizontally */
+.dropdown-menu li a:hover {
+    background-color: #dcf4f7;
+    border-radius: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .centered-text, li, a {
+        font-size: vw;
+        flex-basis: calc(100% - 20px);
+    }
+
+    .nameimage, #rect1, #rect2, #rect3, #rect4, #rect5, #rect6, #rect7, 
+    #rect8, #rect9, #rect10, #rect11, #rect12, #rect13, #rect14, #rect15, #rect16,
+    #rect17, #rect18, #rect19, #rect20, #rect21, #rect22, #rect23, #rect24, #rect25,
+    #rect26, #rect27, #rect28 {
+        flex-basis: calc(100% - 20px);
+    }
 }

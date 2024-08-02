@@ -1,59 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <meta charset="UTF-8">
    <link rel="stylesheet" type="text/css" href="traveling.css">
-   <style>
-      /* Sidebar CSS */
-      .sidebar {
-        position: fixed;
-   top: 170px;
-   left: 0;
-   width: 80px; /* Adjusted width */
-   height: 170px;
-   background-color: #707fa4;
-   color: #000;
-   padding: 10px;
-   font-family: 'Montserrat', sans-serif; /* Setting font to Montserrat */
-   overflow-y: auto;
-}
-
-.sidebar a {
-   display: block;
-   color: #555;
-   text-decoration: none;
-   margin-bottom: 10px;
-   padding: 8px; /* Add padding to create a rectangle effect */
-   border-radius: 20px; /* Add border-radius for rounded corners */
-   background-color: #aed8e4; /* Add background color for each link */
-   text-align: right;
-   font-size: 10px;
-   margin-left: -20px;
-}
-
-.sidebar a:hover {
-   background-color: #b1d0d8; /* Change background color on hover */
-}
-
-.sidebar a:first-child {
-    margin-top: 0px;
-}
-   </style>
+   <script src="traveling.js"></script> 
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="icon" type="image/x-icon" href="images/plane.ico" />
+   <title>Traveling</title>
 </head>
 <body>
-    <header class="header">
-        <h1>Traveling has always been a huge part of my life, I love to get to learn about other cultures and get to experience the differences around the world. It has influenced the way I view the world and has allowed me to broaden my knowledge on numerous topics from getting to interact with others around the world. Traveling is what got me into learning different languages so I am currently perfecting my spanish and want to begin learning Mandarin. With that being said, below is a small insight to some trips I have taken throughout my life, each trip may have some notes on them describing each place from my personal experience. </h1>
-    </header>
-    <div id="travel-map">
-        <iframe src="https://www.travellerspoint.com/embed/map.cfm/#/embed/1127873/" width="100%" height="600" style="border:0;"></iframe>
-    </div>
-    
-   <div class="sidebar">
-      <a href="jennyj.html">Home</a>
-      <a href="modeling.html">Modeling/ Photography</a>
-      <a href="traveling.html">Traveling</a>
-      <a href="resume.html">Resume</a>
+   <nav class="navbar">
+      <ul class="no-bullets nav-menu">
+          <li class="nav-item">
+              <a href="#" id="dropdownToggle" class="nav-link">
+                  <div class="hamburger-icon">
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                  </div>
+              </a>
+              <ul id="dropdownMenu" class="dropdown-menu">
+                  <li><a href="jennyj.html">Home page</a></li>
+                  <li><a href="resume.html">Resume</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="#">ShiftGrab</a></li>
+                  <li><a href="https://classicvibes.co/">Classic Vibes</a></li>
+                  <li><a href="modeling.html">Modeling</a></li>
+              </ul>
+          </li>
+      </ul>
+  </nav>
+   <div class="rectangle centered-text" id="rect1">Traveling</div>
+    <div class="rectangle" id="rect3"></div>
+    <div class="rectangle" id="rect4"></div>
+    <div class="rectangle" id="rect5"></div>
+    <div class="rectangle" id="rect6"></div>
+    <div class="rectangle" id="rect7"></div>
+    <div class="rectangle" id="rect8"></div>
+    <div class="rectangle" id="rect9"></div>
+    <div class="rectangle centered-text" id="rect10"><ul class="no-bullets">
+        <li>Traveling has been a significant part of my personal and professional development. Each journey offers a unique opportunity to immerse myself in diverse cultures, broaden my perspective, and adapt to new environments. These experiences have honed my skills in adaptability, problem-solving, and communication, which are valuable in any professional setting.</li>
+        <li>Maintaining a record of my travels not only allows me to reflect on the adventures I've had but also helps me keep track of the diverse experiences and insights I've gained. This practice of documenting and reviewing my travels contributes to my growth and keeps me motivated. The skills and perspectives I've acquired through traveling enhance my ability to approach challenges with a fresh viewpoint and collaborate effectively in various contexts.</li></div>
+    </ul>
+      <div id="travel-map">
+         <iframe src="https://www.travellerspoint.com/embed/map.cfm/#/embed/1127873/" width="100%" height="600" style="border:0;"></iframe>
+      </div>
    </div>
-   <div class="resume-photo"></div>
 </body>
 </html>
 

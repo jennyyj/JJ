@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = "traveling.html"; // Redirect to Traveling page
     });
 
+    document.getElementById("projects").addEventListener("click", function() {
+        window.location.href = "projects.html"; // Redirect to Projects page
+    });
+
     document.getElementById("resume").addEventListener("click", function() {
         window.location.href = "resume.html"; // Redirect to Resume page
     });
