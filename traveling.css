@@ -75,10 +75,10 @@ ul.no-bullets {
 }
 
 #rect4 {
-    width: 10vw;
+    width: 25vw;
     height: 1vw;
-    top: 13vw;
-    left: 92vw;
+    top: 18vw;
+    left: 80vw;
     transform: rotate(-40deg);
     background-color: #e2b055;
 }
@@ -94,10 +94,10 @@ ul.no-bullets {
 }
 
 #rect6 {
-    width: 25vw;
+    width: 45vw;
     height: 7vw;
     top: 22vw;
-    left: 80vw;
+    left: 72vw;
     border-radius: 200px;
     transform: rotate(-40deg);
     background-color: #eec7be;
@@ -113,10 +113,10 @@ ul.no-bullets {
 }
 
 #rect8 {
-    width: 25vw;
+    width: 35vw;
     height: 17vw;
-    top: -5vw;
-    left: 80vw;
+    top: -6vw;
+    left: 78vw;
     transform: rotate(-40deg);
     border-radius: 200px;
     background-color: #f0f2cf;
@@ -125,8 +125,8 @@ ul.no-bullets {
 #rect9 {
     width: 50vw;
     height: 20vw;
-    top: 110vw;
-    left: -15vw;
+    top: 112vw;
+    left: -18vw;
     transform: rotate(-45deg);
     border-radius: 200px;
     background-color: #f0f2cf;
@@ -172,7 +172,7 @@ ul.no-bullets {
     overflow: hidden; /* Ensure content is hidden during transition */
     height: 0; /* Start with height 0 */
     position: absolute;
-    width: 15vw;
+    width: auto;
     display: flex;
     flex-direction: column;
     background-color: #f0f2cf;

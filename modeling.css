@@ -136,7 +136,6 @@ body {
 }
 
 .rectangle {
-    background-color: #f0f2cf;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -184,26 +183,26 @@ ul.no-bullets {
 }
 
 #rect3 {
-    width: 25vw;
+    width: 35vw;
     height: 6vw;
-    top: -1vw;
-    left: 60vw;
+    top: -5vw;
+    left: 65vw;
     transform: rotate(-40deg);
     border-radius: 100px;
     background-color: #e2b055;
 }
 
 #rect4 {
-    width: 10vw;
+    width: 45vw;
     height: 1vw;
-    top: 13vw;
-    left: 92vw;
+    top: 7vw;
+    left: 90vw;
     transform: rotate(-40deg);
     background-color: #e2b055;
 }
 
 #rect5 {
-    width: 50vw;
+    width: 55vw;
     height: 8vw;
     top: 155vw;
     left: 60vw;
@@ -213,36 +212,36 @@ ul.no-bullets {
 }
 
 #rect6 {
-    width: 25vw;
+    width: 45vw;
     height: 7vw;
     top: 15vw;
-    left: 90vw;
+    left: 87vw;
     border-radius: 200px;
     transform: rotate(-40deg);
     background-color: #eec7be;
 }
 
 #rect7 {
-    width: 25vw;
+    width: 55vw;
     height: 1vw;
-    top: 130vw;
+    top: 140vw;
     left: 85vw;
     transform: rotate(45deg);
     background-color: #eec7be;
 }
 
 #rect8 {
-    width: 25vw;
+    width: 45vw;
     height: 17vw;
-    top: -8vw;
-    left: 80vw;
+    top: -13vw;
+    left: 83vw;
     transform: rotate(-40deg);
     border-radius: 200px;
     background-color: #f0f2cf;
 }
 
 #rect9 {
-    width: 50vw;
+    width: 55vw;
     height: 20vw;
     top: 130vw;
     left: 65vw;
@@ -257,7 +256,6 @@ ul.no-bullets {
     height: 30vw;
     top: 15vw;
     left: 9vw;
-    background-color: #dcf4f7;
     position: absolute;
 }
 
@@ -266,7 +264,6 @@ ul.no-bullets {
     height: 35vw;
     top: 80vw;
     left: 51.5vw;
-    background-color: #dcf4f7;
     position: absolute;
 }
 
@@ -300,7 +297,7 @@ ul.no-bullets {
     overflow: hidden; /* Ensure content is hidden during transition */
     height: 0; /* Start with height 0 */
     position: absolute;
-    width: 15vw;
+    width: auto;
     display: flex;
     flex-direction: column;
     background-color: #f0f2cf;

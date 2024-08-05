@@ -20,6 +20,7 @@ ul.with-bullets {
     list-style-type: disc; /* Show bullet points */
     padding-left: 0; /* Default padding for bullet points */
     margin: 0; 
+    margin: 5px; 
 }
 
 li {
@@ -32,7 +33,7 @@ li {
     width: 65vw; /* Adjust width as needed */
     height: 80vw; /* Maintain aspect ratio */
     position: absolute; /* Positioning context within the rectangle */
-    top: -10vw; /* Adjust top position */
+    top: -9vw; /* Adjust top position */
     left: 31vw; 
 }
 
@@ -44,7 +45,6 @@ li {
 }
 
 .rectangle {
-    background-color: #f0f2cf;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -112,7 +112,7 @@ li {
 #rect4 {
     width: 48vw;
     height: 6vw;
-    top: 95vw;
+    top: 113vw;
     left: 42vw;
     border-radius: 0;
     background-color: #ffecd8;
@@ -173,9 +173,9 @@ li {
 }
 
 #rect10 {
-    width: 25vw;
+    width: 35vw;
     height: 6vw;
-    top: -10vw;
+    top: -11vw;
     left: 68vw;
     transform: rotate(-40deg);
     border-radius: 100px;
@@ -183,10 +183,10 @@ li {
 }
 
 #rect11 {
-    width: 10vw;
+    width: 25vw;
     height: 1vw;
-    top: 13vw;
-    left: 92vw;
+    top: 14vw;
+    left: 85vw;
     transform: rotate(-40deg);
     background-color: #e2b055;
 }
@@ -202,10 +202,10 @@ li {
 }
 
 #rect13 {
-    width: 25vw;
+    width: 45vw;
     height: 7vw;
-    top: 24vw;
-    left: 80vw;
+    top: 19vw;
+    left: 75vw;
     border-radius: 200px;
     transform: rotate(-40deg);
     background-color: #eec7be;
@@ -221,10 +221,10 @@ li {
 }
 
 #rect15 {
-    width: 25vw;
+    width: 45vw;
     height: 17vw;
-    top: -8vw;
-    left: 80vw;
+    top: -12vw;
+    left: 78vw;
     transform: rotate(-40deg);
     border-radius: 200px;
     background-color: #f0f2cf;
@@ -246,61 +246,56 @@ li {
     height: 20vw;
     top: 48vw;
     left: 42vw;
-    background-color: #dcf4f7;
     position: absolute;
 }
 
 #rect18 {
     width: 25vw;
     height: 10vw;
-    top: 110vw;
+    top: 122vw;
     left: 42vw;
     position: absolute;
     font-weight: bold; 
     line-height: 0.8;  
     text-align: left;
     text-indent: 0;
-    background-color: #dcf4f7;
 }
 
 #rect19 {
     width: 48vw;
     height: 19vw;
-    top: 120vw;
+    top: 135vw;
     left: 42vw;
     position: absolute;
     text-indent: 0;
-    background-color: #dcf4f7;
 }
 
 #rect20 {
     width: 15vw;
     height: 10vw;
-    top: 75vw;
+    top: 77vw;
     left: 42vw;
     position: absolute;
     font-weight: bold; 
     line-height: 0.8;  
     text-align: left;
     text-indent: 0;
-    background-color: #dcf4f7;
     justify-content: flex-start;
 }
 
 #rect21 {
     width: 48vw;
     height: 25vw;
-    top: 84vw;
+    top: 90vw;
     left: 42vw;
     position: absolute;
     text-indent: 0;
-    background-color: #dcf4f7;
 }
 
 #rect22 {
     width: 60vw;
     height: 3vw;
-    top: 147vw;
+    top: 167vw;
     left: 42vw;
     position: absolute;
     font-weight: bold; 
@@ -308,26 +303,24 @@ li {
     text-align: left;
     font-size: 1.5vw;
     text-indent: 0;
-    background-color: #dcf4f7;
     justify-content: flex-start;
 }
 
 #rect23 {
     width: 20vw;
     height: 6vw;
-    top: 150vw;
+    top: 170vw;
     left: 42vw;
     line-height: 0.8;
     position: absolute;
     justify-content: flex-start;
     text-indent: 0;
-    background-color: #dcf4f7;
 }
 
 #rect24 {
     width: 30vw;
     height: 3vw;
-    top: 160vw;
+    top: 180vw;
     left: 42vw;
     position: absolute;
     font-weight: bold; 
@@ -335,20 +328,18 @@ li {
     text-align: left;
     font-size: 1.5vw;
     text-indent: 0;
-    background-color: #dcf4f7;
     justify-content: flex-start;
 }
 
 #rect25 {
     width: 30vw;
     height: 6vw;
-    top: 165vw;
+    top: 185vw;
     left: 42vw;
     position: absolute;
     line-height: 0.8;
     text-indent: 0;
     justify-content: flex-start;
-    background-color: #dcf4f7;
 }
 
 #rect26 {
@@ -358,25 +349,22 @@ li {
     left: 6vw;
     position: absolute;
     text-align: center;
-    background-color: #dcf4f7;
 }
 
 #rect27 {
     width: 20vw;
     height: 20vw;
     top: 90vw;
-    left: 6vw;
+    left: 10vw;
     position: absolute;
-    background-color: #dcf4f7;
 }
 
 #rect28 {
     width: 20vw;
     height: 6vw;
     top: 128vw;
-    left: 6vw;
+    left: 10vw;
     position: absolute;
-    background-color: #dcf4f7;
 }
 
 /* Basic styling for the navbar */
@@ -408,7 +396,7 @@ li {
     overflow: hidden; /* Ensure content is hidden during transition */
     height: 0; /* Start with height 0 */
     position: absolute;
-    width: 15vw;
+    width: auto;
     display: flex;
     flex-direction: column;
     background-color: #f0f2cf;

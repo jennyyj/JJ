@@ -36,9 +36,9 @@ body {
 /* Dropdown menu styles */
 .dropdown-menu {
     overflow: hidden; /* Ensure content is hidden during transition */
-    height: 0; /* Start with height 0 */
+    height: 0; 
     position: absolute;
-    width: 15vw;
+    width: auto;
     display: flex;
     flex-direction: column;
     background-color: #f0f2cf;
@@ -107,7 +107,7 @@ ul.with-bullets {
 
 #rect1 {
     top: 6vw;
-    left: 8vw;
+    left: 15vw;
     width: 50vw;
     height: 6vw;
     border-radius: 0;
@@ -116,7 +116,7 @@ ul.with-bullets {
 
 #rect2 {
     top: 40vw;
-    left: 8vw;
+    left: 15vw;
     width: 50vw;
     height: 6vw;
     border-radius: 0;
@@ -124,8 +124,8 @@ ul.with-bullets {
 }
 
 #rect12 {
-    top: 96vw;
-    left: 8vw;
+    top: 105vw;
+    left: 15vw;
     width: 50vw;
     height: 6vw;
     border-radius: 0;
@@ -139,20 +139,20 @@ ul.with-bullets {
 }
 
 #rect3 {
-    width: 35vw;
+    width: 45vw;
     height: 5vw;
     top: 6vw;
-    left: 55vw;
+    left: 60vw;
     transform: rotate(-40deg);
     border-radius: 100px;
     background-color: #e2b055;
 }
 
 #rect4 {
-    width: 25vw;
+    width: 55vw;
     height: 1vw;
-    top: 14vw;
-    left: 85vw;
+    top: 26vw;
+    left: 68vw;
     transform: rotate(-40deg);
     background-color: #e2b055;
 }
@@ -168,10 +168,10 @@ ul.with-bullets {
 }
 
 #rect6 {
-    width: 45vw;
+    width: 65vw;
     height: 6vw;
-    top: 18vw;
-    left: 75vw;
+    top: 35vw;
+    left: 60vw;
     border-radius: 200px;
     transform: rotate(-40deg);
     background-color: #eec7be;
@@ -187,10 +187,10 @@ ul.with-bullets {
 }
 
 #rect8 {
-    width: 40vw;
+    width: 50vw;
     height: 14vw;
-    top: 6vw;
-    left: 65vw;
+    top: 7vw;
+    left: 70vw;
     transform: rotate(-40deg);
     border-radius: 200px;
     background-color: #f0f2cf;
@@ -211,14 +211,14 @@ ul.with-bullets {
     width: 43vw;
     height: 23vw;
     top: 14vw;
-    left: 13vw;
+    left: 19vw;
     position: absolute;
 }
 
 #rect11 {
     width: 50vw;
     height: 18vw;
-    top: 60vw;
+    top: 65vw;
     left: -4vw;
     position: absolute;
 }
@@ -226,7 +226,7 @@ ul.with-bullets {
 #rect13 {
     width: 50vw;
     height: 10vw;
-    top: 30vw;
+    top: 35vw;
     left: 0;
     position: absolute;
 }
@@ -244,7 +244,7 @@ ul.with-bullets {
     margin: 0 auto; /* Center the container and adjust margin */
     position: relative;
     right: 45vw;
-    top: -68vw;
+    top: -75vw;
 }
 
 .board {
@@ -274,7 +274,7 @@ ul.with-bullets {
     width: 23vw; 
     height: 15vw;
     position: absolute; 
-    top: -68vw; 
+    top: -75vw; 
     right: 30vw; 
 }
 
@@ -301,4 +301,17 @@ ul.with-bullets {
 
 .bot { 
     text-align: left; 
+}
+
+
+/* Snake Game */
+
+.game-container {
+    position: absolute;
+    top: -60vw; 
+    left: 37vw;
+}
+
+#gameCanvas {
+    border: 1px solid black;
 }
