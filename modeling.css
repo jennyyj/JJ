@@ -159,7 +159,7 @@ ul.no-bullets {
 /* Headers */
 
 #rect1 {
-    top: 10vw;
+    top: 12vw;
     left: 8vw;
     width: 40vw;
     height: 6vw;
@@ -168,7 +168,7 @@ ul.no-bullets {
 }
 
 #rect2 {
-    top: 93vw;
+    top: 90vw;
     left: 50vw;
     width: 40vw;
     height: 6vw;
@@ -254,7 +254,7 @@ ul.no-bullets {
 #rect10 {
     width: 40vw;
     height: 30vw;
-    top: 18vw;
+    top: 22vw;
     left: 9vw;
     position: absolute;
 }
