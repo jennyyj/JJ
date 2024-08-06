@@ -85,8 +85,8 @@ ul.no-bullets {
 #rect5 {
     width: 55vw;
     height: 8vw;
-    top: 130vw;
-    left: -10vw;
+    top: 135vw;
+    left: -15vw;
     transform: rotate(-45deg);
     border-radius: 100px;
     background-color: #e2b055;
