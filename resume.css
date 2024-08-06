@@ -183,10 +183,10 @@ li {
 }
 
 #rect11 {
-    width: 25vw;
+    width: 85vw;
     height: 1vw;
-    top: 14vw;
-    left: 85vw;
+    top: -80vw;
+    left: 80vw;
     transform: rotate(-40deg);
     background-color: #e2b055;
 }
@@ -202,10 +202,10 @@ li {
 }
 
 #rect13 {
-    width: 45vw;
+    width: 85vw;
     height: 7vw;
-    top: 19vw;
-    left: 75vw;
+    top: 6vw;
+    left: 70vw;
     border-radius: 200px;
     transform: rotate(-40deg);
     background-color: #eec7be;
