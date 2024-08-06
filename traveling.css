@@ -74,9 +74,9 @@ ul.no-bullets {
 }
 
 #rect4 {
-    width: 25vw;
+    width: 85vw;
     height: 1vw;
-    top: 18vw;
+    top: -5vw;
     left: 80vw;
     transform: rotate(-40deg);
     background-color: #e2b055;
@@ -85,7 +85,7 @@ ul.no-bullets {
 #rect5 {
     width: 55vw;
     height: 8vw;
-    top: 138vw;
+    top: 130vw;
     left: -10vw;
     transform: rotate(-45deg);
     border-radius: 100px;
@@ -93,9 +93,9 @@ ul.no-bullets {
 }
 
 #rect6 {
-    width: 85vw;
+    width: 65vw;
     height: 7vw;
-    top: 18vw;
+    top: 17vw;
     left: 69vw;
     border-radius: 200px;
     transform: rotate(-40deg);
