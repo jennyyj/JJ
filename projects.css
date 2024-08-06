@@ -124,7 +124,7 @@ ul.with-bullets {
 }
 
 #rect12 {
-    top: 105vw;
+    top: 115vw;
     left: 15vw;
     width: 50vw;
     height: 6vw;
@@ -218,7 +218,7 @@ ul.with-bullets {
 #rect11 {
     width: 50vw;
     height: 18vw;
-    top: 65vw;
+    top: 75vw;
     left: -4vw;
     position: absolute;
 }
@@ -234,7 +234,7 @@ ul.with-bullets {
 #rect14 {
     width: 60vw;
     height: 18vw;
-    top: 12vw;
+    top: 15vw;
     left: 15vw;
     position: absolute;
 }
@@ -244,7 +244,7 @@ ul.with-bullets {
     margin: 0 auto; /* Center the container and adjust margin */
     position: relative;
     right: 45vw;
-    top: -75vw;
+    top: -90vw;
 }
 
 .board {
@@ -274,7 +274,7 @@ ul.with-bullets {
     width: 23vw; 
     height: 15vw;
     position: absolute; 
-    top: -75vw; 
+    top: -90vw; 
     right: 30vw; 
 }
 
@@ -308,7 +308,7 @@ ul.with-bullets {
 
 .game-container {
     position: absolute;
-    top: -60vw; 
+    top: -70vw; 
     left: 37vw;
 }
 
