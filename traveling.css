@@ -13,7 +13,7 @@ body {
     width: 65vw; /* Adjust width to fill available space */
     height: 50vw; 
     top: 44vw; 
-    left: 12vw;
+    left: 15vw;
     margin-top: 20px; /* Add margin top */
     overflow: hidden; /* Hide overflowing content */
 }
@@ -26,7 +26,6 @@ body {
 }
 
 .rectangle {
-    background-color: #f0f2cf;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -84,7 +83,7 @@ ul.no-bullets {
 }
 
 #rect5 {
-    width: 40vw;
+    width: 55vw;
     height: 8vw;
     top: 138vw;
     left: -10vw;
@@ -94,10 +93,10 @@ ul.no-bullets {
 }
 
 #rect6 {
-    width: 45vw;
+    width: 85vw;
     height: 7vw;
-    top: 22vw;
-    left: 72vw;
+    top: 18vw;
+    left: 69vw;
     border-radius: 200px;
     transform: rotate(-40deg);
     background-color: #eec7be;
@@ -138,7 +137,6 @@ ul.no-bullets {
     height: 20vw;
     top: 20vw;
     left: 18vw;
-    background-color: #dcf4f7;
     position: absolute;
 }
 
