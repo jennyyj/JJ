@@ -25,7 +25,7 @@ body {
 
 /* Adjust margin and position to stagger carousels */
 #carousel1 {
-    margin-top: 70vw; 
+    margin-top: 89vw; 
     margin-left: 5vw;
 }
 
@@ -159,7 +159,7 @@ ul.no-bullets {
 /* Headers */
 
 #rect1 {
-    top: 6vw;
+    top: 10vw;
     left: 8vw;
     width: 40vw;
     height: 6vw;
@@ -168,7 +168,7 @@ ul.no-bullets {
 }
 
 #rect2 {
-    top: 70vw;
+    top: 93vw;
     left: 50vw;
     width: 40vw;
     height: 6vw;
@@ -202,9 +202,9 @@ ul.no-bullets {
 }
 
 #rect5 {
-    width: 55vw;
+    width: 65vw;
     height: 8vw;
-    top: 155vw;
+    top: 175vw;
     left: 60vw;
     transform: rotate(45deg);
     border-radius: 100px;
@@ -212,9 +212,9 @@ ul.no-bullets {
 }
 
 #rect6 {
-    width: 45vw;
+    width: 65vw;
     height: 7vw;
-    top: 15vw;
+    top: 12vw;
     left: 87vw;
     border-radius: 200px;
     transform: rotate(-40deg);
@@ -224,7 +224,7 @@ ul.no-bullets {
 #rect7 {
     width: 55vw;
     height: 1vw;
-    top: 140vw;
+    top: 155vw;
     left: 85vw;
     transform: rotate(45deg);
     background-color: #eec7be;
@@ -241,9 +241,9 @@ ul.no-bullets {
 }
 
 #rect9 {
-    width: 55vw;
+    width: 85vw;
     height: 20vw;
-    top: 130vw;
+    top: 160vw;
     left: 65vw;
     transform: rotate(45deg);
     border-radius: 200px;
@@ -254,7 +254,7 @@ ul.no-bullets {
 #rect10 {
     width: 40vw;
     height: 30vw;
-    top: 15vw;
+    top: 18vw;
     left: 9vw;
     position: absolute;
 }
@@ -262,7 +262,7 @@ ul.no-bullets {
 #rect11 {
     width: 40vw;
     height: 35vw;
-    top: 80vw;
+    top: 100vw;
     left: 51.5vw;
     position: absolute;
 }
